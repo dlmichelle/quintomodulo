@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let numeros = [0,1,2,3,4,5,6,7,8,9,10];
+
+        let contador0 = 0
+        let contador1 = 0
+        let contador2 = 0
+        let contador3 = 0
+        let contador4 = 0
+        let contador5 = 0
+        let contador6 = 0
+        let contador7 = 0
+        let contador8 = 0
+        let contador9 = 0
+        let contador10 = 0
+
+        let contadores = [];
+        
+        let valorusuario = parseInt(prompt("Introduce un número del 0 al 10 para contar y un número negativo para parar."))
+
+        while( valorusuario >= 0){
+            switch (valorusuario) {
+                case 0:
+                    contador0 += 1
+                    valorusuario = parseInt(prompt("Introduce un número del 0 al 10 para contar y un número negativo para parar."))
+                    break;
+                case 1:
+                    contador1 += 1
+                    valorusuario = parseInt(prompt("Introduce un número del 0 al 10 para contar y un número negativo para parar."))
+                    break;
+                case 2:
+                    contador2 += 1
+                    valorusuario = parseInt(prompt("Introduce un número del 0 al 10 para contar y un número negativo para parar."))
+                    break;
+                case 3:
+                    contador3 += 1
+                    valorusuario = parseInt(prompt("Introduce un número del 0 al 10 para contar y un número negativo para parar."))
+                    break;
+                case 4:
+                    contador4 += 1
+                    valorusuario = parseInt(prompt("Introduce un número del 0 al 10 para contar y un número negativo para parar."))
+                    break;
+                case 5:
+                    contador5 += 1
+                    valorusuario = parseInt(prompt("Introduce un número del 0 al 10 para contar y un número negativo para parar."))
+                    break;
+                case 6:
+                    contador6 += 1
+                    valorusuario = parseInt(prompt("Introduce un número del 0 al 10 para contar y un número negativo para parar."))
+                    break;
+                case 7:
+                    contador7 += 1
+                    valorusuario = parseInt(prompt("Introduce un número del 0 al 10 para contar y un número negativo para parar."))
+                    break;
+                case 8:
+                    contador8 += 1
+                    valorusuario = parseInt(prompt("Introduce un número del 0 al 10 para contar y un número negativo para parar."))
+                    break;
+                case 9:
+                    contador9 += 1
+                    valorusuario = parseInt(prompt("Introduce un número del 0 al 10 para contar y un número negativo para parar."))
+                    break;
+                case 10:
+                    contador10 += 1
+                    valorusuario = parseInt(prompt("Introduce un número del 0 al 10 para contar y un número negativo para parar."))
+                    break;
+                default:
+                    valorusuario = parseInt(prompt("Número incorrecto. Introduce un número del 0 al 10 para contar y un número negativo para parar."))
+                    break;
+            }
+        }
+        contadores = [contador0, contador1, contador2, contador3, contador4, contador5, contador6, contador7, contador8, contador9, contador10];
+
+        for(i=0; i<numeros.length; i++){
+            console.log(numeros[i], contadores[i]);
+        }
+    </script>
+</body>
+
+</html>
